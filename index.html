@@ -127,14 +127,7 @@
             .btna:hover{
         
                 background-color: rgb(64, 95, 10);}
-                table,td,th{
-                   border: 1px solid black;
-                   border-collapse: collapse;
-        
-                }
-                table{
-                    background-color: darkolivegreen;
-                }
+
                 .font,marquee{ border-radius: 50px;}
 
                 .contenedor7{
@@ -178,7 +171,24 @@
             font{ position: relative;}
             .color-fondo9{ display: flex; }
         }
-
+        P{
+            width: 500px;
+            height: 80px;
+        font-size: 60px;
+            background-color: transparent;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: black;
+                border-radius: 30px;
+                overflow: hidden;
+                letter-spacing: 5px;
+        }
+        P{ animation: p 4s infinite;}
+        @keyframes p{
+            0%{ margin-left: 0;}
+            50%{ margin-left: -800px;}
+            100%{margin-left: 0;}
+        }
+        .base{margin-top: 20px; background-color: transparent; width: 450px; height: 200px; margin-left: 30px; overflow: hidden;}
             </style>
         </head>
         <body bgcolor="gray">
@@ -205,6 +215,9 @@
                 </ul>
             </div>
             <br>
+            <div class="base">
+            <p>...generatioNEXT</p>
+            </div>
             <CENTER>
                 <div class="color-fondo">
             <h1>     <font color= black size=20>
@@ -310,6 +323,7 @@
                 <source src="love nwantiti.mp3" type="audio/mpeg">
             </audio> 
             </div>
+            
             <style>
                 audio{ 
                     height: 30px;
@@ -321,7 +335,7 @@
                     margin-left: 10px;
                     background-color: rgb(80, 63, 63);
                     width: 370px;
-                    height: 600px;
+                    min-height: 600px;
                     float: left;
                     border-style: solid;
                 }         
