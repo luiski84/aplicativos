@@ -40,13 +40,13 @@
             border-radius: 30px;
         }
         .contenedor{
-        
+            margin-right: 10px;
+            float: right;
             display: flex;
-            width: 1100px;
+            width: 500px;
             height: 30px;
             font-size: 20px;color: white;
             line-height: 35px;
-            position: absolute;
             overflow: hidden;
         }
         
@@ -179,24 +179,26 @@
             font{ position: relative;}
             .color-fondo9{ display: flex; }
         }
-        P{
-            width: 500px;
-            height: 80px;
-        font-size: 60px;
-            background-color: transparent;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                color: black;
-                border-radius: 30px;
-                overflow: hidden;
-                letter-spacing: 5px;
-        }
-        P{ animation: p 4s infinite;}
-        @keyframes p{
+        .base{ border-left: 5px solid; margin-left: 20px; margin-top: 30px; width: 830px; height: 230px; background-color: transparent; font-size: 50px; overflow: hidden;}
+       .p1{ color: aliceblue; width: 600px; height: 50px; background-color: rgb(63, 5, 5); margin:5px;}
+       .p2{ color: aliceblue; width: 600px; height: 50px; background-color: rgb(63, 5, 5); margin: 5px;}
+       .p1{ animation: p1  6s infinite; }
+       .p2{  animation: p2 6s infinite;}
+
+       @keyframes p1{ 
             0%{ margin-left: 0;}
-            50%{ margin-left: -800px;}
-            100%{margin-left: 0; color: red; border-style: solid;}
+            50%{ margin-left: -800px; background-color: red; color: black;}
+            100%{ margin-left: 0; background-color: red; color: black;}
+
+
         }
-        .base{margin-top: 20px; background-color: transparent; width: 450px; height: 200px; margin-left: 30px; overflow: hidden;}
+       @keyframes p2{
+        0%{ margin-left: -800px; }
+            50%{ margin-left: 0; background-color: red; color: black;}
+            100%{ margin-left: -800px; }
+
+
+        }
             </style>
         </head>
         <body bgcolor="gray">
@@ -224,8 +226,13 @@
             </div>
             <br>
             <div class="base">
-            <p>...generatioNEXT</p>
-            </div>
+            <p class="p1">NOVEDADES</p>
+    
+            <p class="p2">PAGINAS DE GESTION</p>
+            <p class="p1">HERRAMIENTAS OFFICE</p>
+    
+            <p class="p2">BIBLIOTECA DOCUMENTOS</p>
+                </div>
             <CENTER>
                 <div class="color-fondo">
             <h1>     <font color= black size=20>
