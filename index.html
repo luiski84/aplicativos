@@ -153,6 +153,14 @@
             object-fit: cover;
             transition: all 500ms;
         }
+        img{ animation: img  8s infinite;}
+        @keyframes img{
+
+                0%{ width: 100%; height: 150%;}
+                50%{width: 150%; height: 200%;}
+                75%{width: 120%; height: 170%;}
+        }
+
         .box:hover{
             flex: 10%;
         }
