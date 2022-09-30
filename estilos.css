@@ -1,0 +1,318 @@
+
+        body{ margin-top: 0; margin-left: 0; margin-right: 0;}
+        h2{ color: aliceblue; font-size: 30px;}
+        a{text-decoration: none; color: white;}
+        .color-fondo{ margin-top: 20px; background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71)); border-style: solid;}
+        .color-fondo3{background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71)); border-style: solid;}
+        .btn:hover{background-color: rgb(109, 18, 18);}
+        .btnt:hover{background-color: rgb(247, 35, 35);}
+        .btnt{ 
+            border: 10px solid rgba(100,100,100,0.1);
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100px;
+            font-family: 'poppins',sans-serif;
+            font-size: 16px;
+            border: 2px;
+            cursor: pointer;
+            color:black;
+            background-size: 300%;
+            background-color: rgba(49, 9, 9, 0.836);
+            border-radius: 30px;
+        }
+        .btn{ 
+            border: 10px solid rgba(100,100,100,0.1);
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 300px;
+            font-family: 'poppins',sans-serif;
+            font-size: 16px;
+            border: 2px;
+            cursor: pointer;
+            color: rgb(26, 11, 11);
+            background-size: 300%;
+            background-color: rgb(17, 24, 21);
+            border-radius: 30px;
+        }
+        .contenedor{
+            margin-right: 10px;
+            float: right;
+            display: flex;
+            width: 500px;
+            height: 30px;
+            font-size: 20px;color: white;
+            line-height: 35px;
+            overflow: hidden;
+        }
+        
+        ul {
+        
+            list-style: none;
+            padding-left: 10px;
+            animation: cambiar 10s infinite;
+        }
+        ul{
+            margin: 0;
+        }
+
+        @keyframes cambiar{
+            0%{ margin-top: 0;}
+            20%{ margin-top: 0;}
+            25%{margin-top: -40px;}
+            50%{margin-top: -40px;}
+            55%{margin-top: -80px;}
+            80%{margin-top: -170px;}
+            85%{margin-top: 0;}
+            95%{margin-top: 0;}
+            100%{margin-top: 0;}
+            }
+            .contenedor2{
+                position: absolute;
+                left: 50%;
+                top: 10%;
+                transform: translate(-50%,-50%);
+                padding: 10px;
+            }
+        
+            input{
+                outline: none;
+                box-sizing: border-box;
+                height: 60px;
+                width: 0;
+                padding: 0 20px;
+                color: rgb(48, 48, 167);
+                border-radius: 50px;
+                font-size: 20px;
+                border: 1px solid rgb(18, 167, 18);
+                transition: all .7s ease;
+            }
+        
+            ::placeholder{
+                color: gray;
+            }
+            .btna{
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 80px;
+                height: 80px;
+                background: rgb(75, 71, 71);
+                line-height: 80px;
+                border-radius: 50px;
+                text-align: center;
+                cursor: pointer;
+                transition: 5s;
+            }
+        
+            .btna i{
+        
+                font-size: 25px;
+                color: white;
+                transition: all .7 ease;
+            }
+        
+            .contenedor2:hover input{
+        
+                width: 350px;
+            }
+            .contenedor2:hover i{
+        
+                transform: rotate(-360deg);
+            }
+            .btna:hover{
+        
+                background-color: rgb(64, 95, 10);}
+
+                .font,marquee{ border-radius: 50px;}
+
+                .contenedor7{
+            display: flex;
+            width: 100%;
+            height: 35vh;
+            padding: 4% 2%;
+            box-sizing: border-box;
+            border-style: solid;
+        }
+        .box{
+            flex: 1;
+            overflow: hidden;
+            margin: 8px;
+            line-height: 0;
+            box-shadow: 0 20px 30px black;
+            transition: all 600ms;
+            cursor: pointer;
+        }
+        .box > img{
+            width: 100%;
+            height: 150%;
+            object-fit: cover;
+            transition: all 500ms;
+        }
+        img{ animation: img  8s 2;}
+        @keyframes img{
+
+                0%{ width: 100%; height: 150%;}
+                50%{width: 150%; height: 200%;}
+                75%{width: 120%; height: 170%;}
+        }
+
+        .box:hover{
+            flex: 10%;
+        }
+        .box:hover{
+            width: 100%;
+            height: 100%;
+        }
+        
+	.contenedor11{ margin-top: 28px;  float: right; width: 1505px;}
+        @media(max-width:1000px){
+            body{ position: absolute;}
+            .box > img{ flex-direction: column; position: absolute;}
+            marquee{ float: none; margin: 10px;}
+            img{height: 150%; position: relative;}
+            font{ position: relative;}
+            .color-fondo9{ display: flex; }
+        }
+        .base{ border-left: 5px solid; margin-left: 20px; margin-top: 30px; width: 830px; height: 230px; background-color: transparent; font-size: 50px; overflow: hidden;}
+       .p1{ color: aliceblue; width: 700px; height: 50px; background-color: rgb(63, 5, 5); margin:5px; border-right: 8px black solid;}
+       .p2{ color: aliceblue; width: 700px; height: 50px; background-color: rgb(63, 5, 5); margin: 5px; border-right: 8px black solid;}
+       .p1{ animation: p1  6s infinite; }
+       .p2{  animation: p2 6s infinite;}
+
+       @keyframes p1{ 
+            0%{ margin-left: 0;}
+            50%{ margin-left: -800px; background-color: red; color: black;}
+            100%{ margin-left: 0; background-color: red; color: black;}
+
+
+        }
+       @keyframes p2{
+        0%{ margin-left: -800px; color: black}
+            50%{ margin-left: 0; background-color: red; color: white;}
+            100%{ margin-left: -800px; color:black }
+
+
+        }
+        audio{ 
+            height: 30px;
+            display: flex;
+            margin: 5px;
+        }
+        .office{ 
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: rgb(80, 63, 63);
+            width: 370px;
+            min-height: 600px;
+            float: left;
+            border-style: solid;
+        }   
+        button{ background-color:black;  width: 300px ; height: 50px; border-radius:30px; font-size:20px; margin: 10px; }
+
+
+        marquee{letter-spacing:10px;}
+
+
+    
+
+       .body2{
+            background-image: url(imagenoff.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh; background-attachment: fixed;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+       
+        .pdfs{
+            margin-top: 3px;
+            margin-left: 0;
+            background-color: rgb(49, 43, 43);
+            width: 1500px;
+            height:1500px;
+            border-style: solid;
+            float: left;
+        }
+       .pdfs a{
+            margin-top: 10px;
+            width: 400px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            background-color: gray;
+            border-radius: 30px;
+            margin: 30px;
+            display: flex;
+            border-style: solid;
+    
+        }
+       .pdfs a:hover{
+           margin-left: 5px; width: 700px; height: 200px; font-size: 50px;transition: all 300ms; background-color: black;color: aliceblue; font-weight: 60px; letter-spacing: 20px;
+
+        }
+        .bibliotecas{ 
+            font-size: 20px;
+            color: aliceblue;
+            letter-spacing: 30px;
+            margin-left: 500px;
+        }
+ 
+        .avisos{
+            margin-top: 3px;
+            float: right;
+            width: 390px;
+            height: 1390px;
+            background-color: rgb(49, 43, 43);
+            border-style: solid;
+            border-color: black;
+        }
+       article p{
+            width: 380px;
+            height: 150px;
+            margin: 5px;
+            font-size: 30px;
+            background-color: rgb(56, 44, 44);
+            color: aliceblue;
+            text-align: center;
+            font-family: Impact, Haettenschweiler;
+            border-style: solid;
+        }
+        .notas p{
+            width: 380px;
+            height: 50px;
+            margin: 5px;
+            color: black;
+            font-size: 10px;
+            border-style: solid; border-color: black;
+            background-color: rgb(56, 44, 44);
+        }
+        .notas p:hover{
+            background-color: black;
+            color: aliceblue;
+            height: 300px;
+            font-size: 30px;
+            transition: all 300ms;
+            cursor: pointer;
+        }
+        nav{
+            width: 390px;
+            height: 100px;
+            background-color: rgb(49, 43, 43);
+            float: right;
+            overflow: hidden;
+            border-style: solid;
+        }
+        nav a{ float: right; width: 390px; height: 300px; font-size: 50px; text-decoration: none; background-color: rgb(56, 44, 44); text-align: center; color: black;}
+        .otr{ color: aliceblue; font-size: 40px; font-family: Impact, Haettenschweiler; font-style: normal; font-weight: 2000;}
+        .otr{ animation: a 5s infinite; }
+        @keyframes a{
+            0%{ color: aliceblue}
+            25%{ color:green;}
+            50%{ color:black;}
+            75%{ color:red;}
+
+        }
+
+        marquee{ border-radius: 30px; letter-spacing: 15px;}
