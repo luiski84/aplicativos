@@ -2,10 +2,18 @@
         body{ margin-top: 0; margin-left: 0; margin-right: 0;}
         h2{ color: aliceblue; font-size: 30px;}
         a{text-decoration: none; color: white;}
-        .color-fondo{ margin-top: 20px; background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71)); border-style: solid;}
+        .color-fondo{ height: 200px; margin-top: 20px; background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71)); border-style: solid;}
         .color-fondo3{background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71)); border-style: solid;}
         .btn:hover{background-color: rgb(109, 18, 18);}
         .btnt:hover{background-color: rgb(247, 35, 35);}
+        .titulo{ font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; animation: apagado 6s infinite; }
+
+        @keyframes apagado{
+
+            0%{ color: aliceblue;}
+            50%{ color: gray;}
+            75%{ color: black; }
+        }
         .btnt{ 
             border: 10px solid rgba(100,100,100,0.1);
             margin-bottom: 20px;
