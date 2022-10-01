@@ -1,4 +1,4 @@
-
+/* css pagina principal*/
         body{ margin-top: 0; margin-left: 0; margin-right: 0;}
         h2{ color: aliceblue; font-size: 30px;}
         a{text-decoration: none; color: white;}
@@ -211,7 +211,7 @@
             margin-left: 10px;
             background-color: rgb(80, 63, 63);
             width: 370px;
-            min-height: 600px;
+            min-height: 800px;
             float: left;
             border-style: solid;
         }   
@@ -221,7 +221,7 @@
         marquee{letter-spacing:10px;}
 
 
-    
+    /*  css de la seccion  biblioteca*/
 
        .body2{
             background-image: url(imagenoff.jpg);
@@ -266,7 +266,7 @@
             letter-spacing: 30px;
             margin-left: 500px;
         }
- 
+        /* avisos y notas de novedades*/
         .avisos{
             margin-top: 3px;
             float: right;
@@ -323,4 +323,4 @@
 
         }
 
-        marquee{ border-radius: 30px; letter-spacing: 15px;}
+        marquee{ border-radius: 30px; letter-spacing: 15px; position: sticky; top: 0;}
