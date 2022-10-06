@@ -195,3 +195,34 @@
             50%{ color: gray;}
             75%{ color: black; }
         }
+
+
+        /*responsive*/
+
+        @media screen and ( max-width: 768px){
+
+            .grid{
+                display: grid;
+                grid-template-columns: 500px;
+            }
+            .paginas{  
+                display:grid;
+                grid-template-columns: 400px;
+                row-gap: 15px;
+
+            }
+            .multimedia{
+            display: grid;
+            grid-template-rows: repeat(5 20px);
+            row-gap: 5px;
+
+            }
+            .multimedia button{
+                height: 50px;
+
+            }
+            .tiras{
+                grid-template-columns: auto;
+            }
+            
+        }
