@@ -244,90 +244,68 @@
         /*RESPONSIVE BIBLIOTECA*/
 
         @media screen and ( max-width: 768px){
-            .clasebiblio{
-                display: grid;  
-                grid-template-columns: auto;
-                grid-template-rows: auto auto auto;
-                margin-right:  0;
-                background-color: rgb(49, 43, 43);
-               
-        
-                }
-             
-                .clasebiblio .pdfs{
-                    display: grid;
-                   
-                    grid-template-rows: 100px 100px 100px 100px 100px;
-                    column-gap: 2px;
-                    margin-top: 3px;
-                    margin-left: 0;
-                    background-color: rgb(49, 43, 43);
-                    width: 800px;
-                    height:1000px;
-                    border-style: solid;
-                    
-        }
-        .clasebiblio img{
-            display: grid;
           
-            grid-template-columns: 100px 100px;
-            width: 100px;
-            margin: 5px;
-        }
-     
-      
-        .claseinicio{
-            width: 800px;
-            height: 100px;
-            background-color: rgb(49, 43, 43);
-            float: left;
-        }
-        .claseavisos{
-            margin-top: 3px;
-            float: left;
-            width: 800px;
-            height: 500px;
-            background-color: rgb(49, 43, 43);
-            border-style: solid;
-            border-color: black;
-        }
 
-        article p{
-            width: 800px;
-            height: 150px;
-            margin: 5px;
-            font-size: 30px;
-            background-color: rgb(56, 44, 44);
-            color: aliceblue;
-            text-align: center;
-            font-family: Impact, Haettenschweiler;
-            border-style: solid;
-        }
-        .notas p{
-            width: 800px;
-            height: 50px;
-            margin: 5px;
-            color: black;
-            font-size: 10px;
-            border-style: solid; border-color: black;
-            background-color: rgb(56, 44, 44);
-        }
-        .pdfs a{
-           
-            width: 150px;
-            text-decoration: none;
-            color:black;
-            overflow: hidden;
-          }
+            .clasebiblio{
+                display: grid;
+                height: 100%;
+             grid-template-columns: 200px;
+             background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
 
-          .pdfs button{
-            width: 170px;
-            height: 100px;
-            border-radius: 20px;
-            overflow: hidden;
-          }
-          .pdfs a:hover{ color: aliceblue; }
-    
-          .pdfs button:hover{ background-color: black; width: 250px; transition: all 600ms;}
-    
-    }
+          
+
+            }
+            .clasebiblio .pdfs{
+                background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
+                display: block;
+                width: 500px;
+                height: 1200px;
+            }
+            .pdfs img{
+                display: flex;
+                width: 300px;
+                height: 80px;
+                animation: libro 2000ms 1 ;
+              }
+              .pdfs a{
+               
+                width: 300px;
+                font-size: 15px;
+                text-decoration: none;
+                color: black;
+                overflow: hidden;
+              }
+
+              .pdfs a:hover{ color: aliceblue; }
+
+              .pdfs button:hover{ background-color: black; width: 500px; transition: all 600ms;}
+            .pdfs button{  
+                display:flex;
+                width: 500px;
+                cursor: pointer;
+                
+
+            }
+            
+            .clasebiblio .clasebiblio2{
+
+                width: 500px;
+                height: 600px;
+                background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
+            }
+            .clasebiblio .clasebiblio2  .claseinicio{
+                width: 500px;
+                height: 100px;
+            }
+            .clasebiblio2  .claseavisos {
+                width: 500px;
+                height: 500px;
+            }
+            .clasebiblio2  .claseavisos article  p{
+                width: 490px;
+            }
+
+            .clasebiblio2  .claseavisos .notas p{
+                width: 490px;
+            }
+        }
