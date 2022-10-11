@@ -222,19 +222,28 @@
             }
             .paginas{  
                 display:grid;
-                grid-template-columns: 400px;
+                grid-template-columns: 300px;
                 row-gap: 15px;
 
             }
             .multimedia{
-            display: grid;
-            grid-template-rows: repeat(5 20px);
-            row-gap: 5px;
+           height: 1000px;
+            margin: 50px;
+            flex-direction: column;
 
             }
             .multimedia button{
+                flex-direction:column ;
+                align-content: center;
                 height: 50px;
+                margin: 1px;
+                
 
+            }
+            .multimedia button a{font-size: 40px;}
+            .multimedia audio{
+                
+                margin: 20px;
             }
             .tiras{
                 grid-template-columns: auto;
