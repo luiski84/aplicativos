@@ -150,6 +150,7 @@
         }
         .multimedia button{
             font-size: 20px;
+            height: 40px;
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             background-color: black;   
         }
@@ -267,6 +268,25 @@
             75%{ color: black; }
         }
 
+
+
+        /*PLAY LIST*/
+
+        body{
+            display: grid;
+            background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
+        }
+        .listacanciones{ background-color: black; border-left: 20px solid; margin-left: 10px;}
+        .tituloplay{ width: 700px;  overflow: hidden;  margin-left: 100px;}
+        .tituloplay h1{ text-align: center; font-size: 50px; color: aliceblue; background-color: red; border-right: 20px black solid;}
+        .listacanciones audio{ width: 150px; margin-top: 10px;}
+        .listacanciones p{ color: aliceblue;}
+        .tituloplay{ animation: play 5s infinite;}
+        @keyframes play{ 
+            0%{ margin-left:0;}
+            50%{ margin-left: -800px;}
+            100%{ margin-left: 0;}
+        }
 
         /*responsive*/
 
